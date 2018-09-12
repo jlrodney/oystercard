@@ -1,5 +1,10 @@
 require_relative 'oystercard.rb'
 
 class Station
+  attr_reader :name, :zone
 
-end 
+  def initialize(name, zone)
+    @name = name
+    @zone = zone
+  end  
+end
